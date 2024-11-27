@@ -68,3 +68,18 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodW5nbHQuZWVAZ21haWwuY29tI
 ###
 GET http://localhost:8080/identity/roles
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodW5nbHQuZWVAZ21haWwuY29tIiwic2NvcGUiOiJST0xFX0FETUlOIiwiaXNzIjoiZGV2dGVyaWEuY29tIiwiZXhwIjoxNzMyNzAxNDgxLCJpYXQiOjE3MzI2OTc4ODEsInVzZXJJZCI6IjIiLCJqdGkiOiI3M2ExODliZS02M2Q0LTQzMWEtYThhOS02OTBkNjQ4Y2FkYzIifQ.xWQvNzC8GeBCFXYGBJt7T4bc2HbBnyweJk2ajRzMs9bW5_7db_kXc5mP7WHbhHQrm-XUBP8NwRdz_Fu7KeXMLA
+
+###
+http://localhost:8081/profile/users/ không được có dấu /
+###
+POST http://localhost:8081/profile/users
+Content-Type: application/json
+
+{
+  "firstName": "firstName",
+  "lastName": "lastName",
+  "city": "Hanoi"
+}
+
+###
+GET http://localhost:8081/profile/users/abe1f5b0-0a77-4e68-82b6-ffff38defe3a
