@@ -83,3 +83,19 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8081/profile/users/abe1f5b0-0a77-4e68-82b6-ffff38defe3a
+
+###
+POST http://localhost:8080/identity/users
+Content-Type: application/json
+
+{
+  "username": "jame4",
+  "password": "12345678",
+  "firstName": "Jame4",
+  "lastName": "Bond",
+  "dob": "2000-04-08",
+  "city": "Hanoi"
+}
+
+###
+GET http://localhost:8081/profile/users/6655c655-0b91-4980-a4ab-c95b282c60df
