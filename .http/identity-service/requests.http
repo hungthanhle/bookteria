@@ -1,5 +1,5 @@
 ###
-POST http://localhost:8080/auth/token
+POST http://localhost:8080/identity/auth/token
 Content-Type: application/json
 
 {
@@ -8,7 +8,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8080/auth/token
+POST http://localhost:8080/identity/auth/token
 Content-Type: application/json
 
 {
@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8080/auth/token
+POST http://localhost:8080/identity/auth/token
 Content-Type: application/json
 
 {
@@ -26,7 +26,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8080/auth/refresh
+POST http://localhost:8080/identity/auth/refresh
 Content-Type: application/json
 
 {
@@ -34,7 +34,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8080/auth/introspect
+POST http://localhost:8080/identity/auth/introspect
 Content-Type: application/json
 
 {
@@ -42,7 +42,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8080/auth/logout
+POST http://localhost:8080/identity/auth/logout
 Content-Type: application/json
 
 {
@@ -50,21 +50,21 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8080/users
+GET http://localhost:8080/identity/users
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodW5nbHQuZWVAZ21haWwuY29tIiwic2NvcGUiOiJST0xFX0FETUlOIiwiaXNzIjoiZGV2dGVyaWEuY29tIiwiZXhwIjoxNzMyNzAxNDgxLCJpYXQiOjE3MzI2OTc4ODEsInVzZXJJZCI6IjIiLCJqdGkiOiI3M2ExODliZS02M2Q0LTQzMWEtYThhOS02OTBkNjQ4Y2FkYzIifQ.xWQvNzC8GeBCFXYGBJt7T4bc2HbBnyweJk2ajRzMs9bW5_7db_kXc5mP7WHbhHQrm-XUBP8NwRdz_Fu7KeXMLA
 
 ### OK
-GET http://localhost:8080/users/1
+GET http://localhost:8080/identity/users/1
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodW5nbHQuZWVAZ21haWwuY29tIiwic2NvcGUiOiJST0xFX0FETUlOIiwiaXNzIjoiZGV2dGVyaWEuY29tIiwiZXhwIjoxNzMyNzAxNDgxLCJpYXQiOjE3MzI2OTc4ODEsInVzZXJJZCI6IjIiLCJqdGkiOiI3M2ExODliZS02M2Q0LTQzMWEtYThhOS02OTBkNjQ4Y2FkYzIifQ.xWQvNzC8GeBCFXYGBJt7T4bc2HbBnyweJk2ajRzMs9bW5_7db_kXc5mP7WHbhHQrm-XUBP8NwRdz_Fu7KeXMLA
 
 ###
-GET http://localhost:8080/users/my-info
+GET http://localhost:8080/identity/users/my-info
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodW5nbHQuZWVAZ21haWwuY29tIiwic2NvcGUiOiJST0xFX0FETUlOIiwiaXNzIjoiZGV2dGVyaWEuY29tIiwiZXhwIjoxNzMyNzAxNDgxLCJpYXQiOjE3MzI2OTc4ODEsInVzZXJJZCI6IjIiLCJqdGkiOiI3M2ExODliZS02M2Q0LTQzMWEtYThhOS02OTBkNjQ4Y2FkYzIifQ.xWQvNzC8GeBCFXYGBJt7T4bc2HbBnyweJk2ajRzMs9bW5_7db_kXc5mP7WHbhHQrm-XUBP8NwRdz_Fu7KeXMLA
 
 ###
-GET http://localhost:8080/permissions
+GET http://localhost:8080/identity/permissions
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodW5nbHQuZWVAZ21haWwuY29tIiwic2NvcGUiOiJST0xFX0FETUlOIiwiaXNzIjoiZGV2dGVyaWEuY29tIiwiZXhwIjoxNzMyNzAxNDgxLCJpYXQiOjE3MzI2OTc4ODEsInVzZXJJZCI6IjIiLCJqdGkiOiI3M2ExODliZS02M2Q0LTQzMWEtYThhOS02OTBkNjQ4Y2FkYzIifQ.xWQvNzC8GeBCFXYGBJt7T4bc2HbBnyweJk2ajRzMs9bW5_7db_kXc5mP7WHbhHQrm-XUBP8NwRdz_Fu7KeXMLA
 
 ###
-GET http://localhost:8080/roles
+GET http://localhost:8080/identity/roles
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodW5nbHQuZWVAZ21haWwuY29tIiwic2NvcGUiOiJST0xFX0FETUlOIiwiaXNzIjoiZGV2dGVyaWEuY29tIiwiZXhwIjoxNzMyNzAxNDgxLCJpYXQiOjE3MzI2OTc4ODEsInVzZXJJZCI6IjIiLCJqdGkiOiI3M2ExODliZS02M2Q0LTQzMWEtYThhOS02OTBkNjQ4Y2FkYzIifQ.xWQvNzC8GeBCFXYGBJt7T4bc2HbBnyweJk2ajRzMs9bW5_7db_kXc5mP7WHbhHQrm-XUBP8NwRdz_Fu7KeXMLA
