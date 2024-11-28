@@ -15,4 +15,7 @@ inject => ProfileClient profileClient;
 profileClient.createProfile();
 
 Spring Cloud Gateway: khai báo route - uri
+
+Giới hạn gateway call
+/profile/internal/users không thỏa mãn: /profile/users/**
 ```

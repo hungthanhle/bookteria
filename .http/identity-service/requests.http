@@ -99,3 +99,37 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8081/profile/users/6655c655-0b91-4980-a4ab-c95b282c60df
+
+
+###
+POST http://localhost:8888/api/v1/identity/auth/token
+Content-Type: application/json
+
+{
+  "username": "hunglt.ee@gmail.com",
+  "password": "1234"
+}
+
+###
+GET http://localhost:8888/api/v1/identity/users/my-info
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJodW5nbHQuZWVAZ21haWwuY29tIiwic2NvcGUiOiJST0xFX0FETUlOIiwiaXNzIjoiZGV2dGVyaWEuY29tIiwiZXhwIjoxNzMyNzgwODQxLCJpYXQiOjE3MzI3NzcyNDEsInVzZXJJZCI6IjIiLCJqdGkiOiJhY2MwZjhlNi1kNGVjLTRiOTYtOGY4Ny1mMTY0NTFiY2MyMjcifQ.Frhy1LAtnZl9H1qvVUsldTl6f_-owLsMeLBhwpdx_S1hu5G94xddEKlo1_pZ5EkPF8h8HAMNSKDWI9qRapjmHw
+
+###
+POST http://localhost:8081/profile/internal/users
+Content-Type: application/json
+
+{
+  "firstName": "firstName",
+  "lastName": "lastName",
+  "city": "Hanoi"
+}
+
+### NOT FOUND
+POST http://localhost:8888/api/v1/profile/internal/users
+Content-Type: application/json
+
+{
+  "firstName": "firstName",
+  "lastName": "lastName",
+  "city": "Hanoi"
+}
