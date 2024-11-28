@@ -179,3 +179,16 @@ Content-Type: application/json
   "dob": "2000-10-01",
   "city": "Hanoi"
 }
+
+###
+POST http://localhost:8888/api/v1/identity/users/registration
+Content-Type: application/json
+
+{
+  "username": "new+7@example.com",
+  "password": "12345678",
+  "firstName": "A",
+  "lastName": "A",
+  "dob": "2000-10-01",
+  "city": "Hanoi"
+}
