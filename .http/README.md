@@ -13,4 +13,6 @@ interface ProfileClient
 
 inject => ProfileClient profileClient;
 profileClient.createProfile();
+
+Spring Cloud Gateway: khai báo route - uri
 ```
