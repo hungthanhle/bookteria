@@ -27,4 +27,10 @@ các services khác thì decode -> role
 https://youtu.be/HB222xGqDOg?si=djsrQbgw7CpLH4MR&t=997 - global mọi FeignClient -> gọi ra ngoài thì sao ?
 => không dùng Bean @Component nữa
 Dùng interceptor apply header => access token
+
+cd web-app/
+npm install
+npm start
+https://stackoverflow.com/questions/39959900/npm-start-error-with-create-react-app/39960523#39960523
+./node_modules/react-scripts/bin/react-scripts.js start
 ```
