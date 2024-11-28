@@ -133,3 +133,35 @@ Content-Type: application/json
   "lastName": "lastName",
   "city": "Hanoi"
 }
+
+###
+GET http://localhost:8081/profile/users
+
+###
+GET http://localhost:8888/api/v1/profile/users
+
+###
+POST http://localhost:8888/api/v1/identity/auth/token
+Content-Type: application/json
+
+{
+  "username": "admin@example.com",
+  "password": "1234"
+}
+
+###
+GET http://localhost:8888/api/v1/profile/users
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXZ0ZXJpYS5jb20iLCJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImV4cCI6MTczMjc4ODE0NiwiaWF0IjoxNzMyNzg0NTQ2LCJqdGkiOiJhM2FiYjY1YS05MDU4LTRjODgtYmFjMi03MGUwOWRlYjJhMzYiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.jPDXTmWm9FgC3kIEPGt61sQj5m_QUEgNo9qnc6614kIRWt3IbaxAXwtoo4RJFTjttCikkooofztuqSZHeJViUQ
+
+###
+POST http://localhost:8888/api/v1/identity/auth/token
+Content-Type: application/json
+
+{
+  "username": "new+4@example.com",
+  "password": "1234"
+}
+
+### You do not have permission
+GET http://localhost:8888/api/v1/profile/users
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXZ0ZXJpYS5jb20iLCJzdWIiOiJuZXcrNEBleGFtcGxlLmNvbSIsImV4cCI6MTczMjc4ODMzMiwiaWF0IjoxNzMyNzg0NzMyLCJqdGkiOiI4OGQ2NTAwZS03OThmLTRlMjQtYTZlOS0xZmVkMTRkMDY5YjciLCJzY29wZSI6IlJPTEVfVVNFUiJ9.sv1fCUcJIfw6LJHJsrKDsK5tD1gJCvy6nBc7l12vACJCawy6R6ChNZpVFn4u92P0F2K7naI1uMu5QF1gT8FBbw

@@ -54,6 +54,7 @@ public class UserService {
         var profileRequest = profileMapper.toProfileCreationRequest(request);
         profileRequest.setUserId(user.getId());
 
+        // chưa có access token
         profileClient.createProfile(profileRequest);
 
         return userMapper.toUserResponse(user);

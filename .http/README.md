@@ -18,4 +18,9 @@ Spring Cloud Gateway: khai báo route - uri
 
 Giới hạn gateway call
 /profile/internal/users không thỏa mãn: /profile/users/**
+
+https://youtu.be/63qRzV-ojU4?si=jh-8-5623xTdPkuE&t=2837
+bỏ qua việc toàn bộ api phải authen tại gateway
+instropect một lần rồi
+các services khác thì decode -> role
 ```
