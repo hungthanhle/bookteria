@@ -33,4 +33,20 @@ npm install
 npm start
 https://stackoverflow.com/questions/39959900/npm-start-error-with-create-react-app/39960523#39960523
 ./node_modules/react-scripts/bin/react-scripts.js start
+
+
+hung@hung:~$ sudo systemctl status mongod
+[sudo] password for hung: 
+○ mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; disabled; vendor prese>
+     Active: inactive (dead)
+       Docs: https://docs.mongodb.org/manual
+
+hung@hung:~$ sudo systemctl start mongod
+hung@hung:~$ sudo systemctl status mongod
+● mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; disabled; vendor prese>
+     Active: active (running) since Thu 2024-11-28 23:24:45 +07; 2s ago
+
+https://stackoverflow.com/questions/38921414/mongodb-what-are-the-default-user-and-password 
 ```
