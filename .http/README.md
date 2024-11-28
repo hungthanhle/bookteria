@@ -23,4 +23,7 @@ https://youtu.be/63qRzV-ojU4?si=jh-8-5623xTdPkuE&t=2837
 bỏ qua việc toàn bộ api phải authen tại gateway
 instropect một lần rồi
 các services khác thì decode -> role
+
+https://youtu.be/HB222xGqDOg?si=djsrQbgw7CpLH4MR&t=997 - global mọi FeignClient -> gọi ra ngoài thì sao ?
+=> không dùng Bean @Component nữa
 ```
