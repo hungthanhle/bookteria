@@ -165,3 +165,17 @@ Content-Type: application/json
 ### You do not have permission
 GET http://localhost:8888/api/v1/profile/users
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXZ0ZXJpYS5jb20iLCJzdWIiOiJuZXcrNEBleGFtcGxlLmNvbSIsImV4cCI6MTczMjc4ODMzMiwiaWF0IjoxNzMyNzg0NzMyLCJqdGkiOiI4OGQ2NTAwZS03OThmLTRlMjQtYTZlOS0xZmVkMTRkMDY5YjciLCJzY29wZSI6IlJPTEVfVVNFUiJ9.sv1fCUcJIfw6LJHJsrKDsK5tD1gJCvy6nBc7l12vACJCawy6R6ChNZpVFn4u92P0F2K7naI1uMu5QF1gT8FBbw
+
+###
+POST http://localhost:8888/api/v1/identity/users/registration
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXZ0ZXJpYS5jb20iLCJzdWIiOiJodW5nbHQuZWVAZ21haWwuY29tIiwiZXhwIjoxNzMyNzkyNDkzLCJpYXQiOjE3MzI3ODg4OTMsImp0aSI6IjgxNjcxZmI5LTc5YjktNDRmNy05YzVkLTBlYWFhYTY4YWE3NSIsInNjb3BlIjoiUk9MRV9BRE1JTiJ9.uxNbZ2TWcciiQtMwisqkq_XLe0AxcVuBlMbQ9eXUqbrStiWHU29mw7mN60IbP7L9ohqMMo73YYc5deGBOZRElw
+Content-Type: application/json
+
+{
+  "username": "new+6@example.com",
+  "password": "12345678",
+  "firstName": "A",
+  "lastName": "A",
+  "dob": "2000-10-01",
+  "city": "Hanoi"
+}
