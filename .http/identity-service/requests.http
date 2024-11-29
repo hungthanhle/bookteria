@@ -232,3 +232,25 @@ Content-Type: application/json
   "dob": "2000-04-08",
   "city": "Hanoi"
 }
+
+###
+POST http://localhost:8888/api/v1/identity/auth/token
+Content-Type: application/json
+
+{
+  "username": "new+4@example.com",
+  "password": "1234"
+}
+
+###
+POST http://localhost:8888/api/v1/post/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXZ0ZXJpYS5jb20iLCJzdWIiOiIzIiwiZXhwIjoxNzMyODY1MTcwLCJpYXQiOjE3MzI4NjE1NzAsImp0aSI6ImFhNDJiNWE5LTFkNDEtNDUyNi1iMjAzLWI2NjhlYTA5NTQwOSIsInNjb3BlIjoiUk9MRV9VU0VSIn0.8Qviupjm_rs3sCddYgKZJM2H8eo5-uMb6VGFqFvpeusTUCcSAQiuowtGYX-TfmM8yu0OXk8BiOI634Usi2eteQ
+Content-Type: application/json
+
+{
+  "content": "hello"
+}
+
+###
+GET http://localhost:8888/api/v1/post/my-posts
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXZ0ZXJpYS5jb20iLCJzdWIiOiIzIiwiZXhwIjoxNzMyODY1MTcwLCJpYXQiOjE3MzI4NjE1NzAsImp0aSI6ImFhNDJiNWE5LTFkNDEtNDUyNi1iMjAzLWI2NjhlYTA5NTQwOSIsInNjb3BlIjoiUk9MRV9VU0VSIn0.8Qviupjm_rs3sCddYgKZJM2H8eo5-uMb6VGFqFvpeusTUCcSAQiuowtGYX-TfmM8yu0OXk8BiOI634Usi2eteQ
