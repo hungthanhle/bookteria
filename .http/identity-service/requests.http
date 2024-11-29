@@ -218,3 +218,17 @@ Content-Type: application/json
   "dob": "2000-04-08",
   "city": "Hanoi"
 }
+
+###
+POST http://localhost:8888/api/v1/identity/users/registration
+Content-Type: application/json
+
+{
+  "username": "hung_account+1",
+  "email": "hunglt.ee@yopmail.com",
+  "password": "12345678",
+  "firstName": "Jame4",
+  "lastName": "Bond",
+  "dob": "2000-04-08",
+  "city": "Hanoi"
+}
