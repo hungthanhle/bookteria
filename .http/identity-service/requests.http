@@ -262,3 +262,40 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXZ0ZXJpYS5jb20iLCJzdWIiO
 ### "created": "10 hours",
 GET http://localhost:8888/api/v1/post/my-posts?page=1&size=10
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXZ0ZXJpYS5jb20iLCJzdWIiOiIzIiwiZXhwIjoxNzMyOTAxODEwLCJpYXQiOjE3MzI4OTgyMTAsImp0aSI6ImJiNjcyZDE4LWRmZTYtNGM0Zi04YmNiLThmNmRiZDM3YmMyMyIsInNjb3BlIjoiUk9MRV9VU0VSIn0.whtDgN1QV2D4tkOhkW8IfUiQ91ZnD4hYvUq3XhM1EIF7kzxAogDTvAZkfXgXRsOOO9NBju5unPXv85muNXrmVg
+
+
+###
+POST http://localhost:8888/api/v1/identity/users/registration
+Content-Type: application/json
+
+{
+  "username": "Uname",
+  "password": "12345678",
+  "email": "Noi@NhungDieuDeNghe.com",
+  "firstName": "Noi",
+  "lastName": "NhungDieuDeNghe",
+  "dob": "2000-04-08",
+  "city": "Hanoi"
+}
+###
+POST http://localhost:8888/api/v1/identity/auth/token
+Content-Type: application/json
+
+{
+  "username": "Uname",
+  "password": "12345678"
+}
+###
+GET http://localhost:8081/profile/internal/users/3ae0b91a-90d5-46b5-be50-f3635763bb0d
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXZ0ZXJpYS5jb20iLCJzdWIiOiIzYWUwYjkxYS05MGQ1LTQ2YjUtYmU1MC1mMzYzNTc2M2JiMGQiLCJleHAiOjE3MzI5MDU1MjcsImlhdCI6MTczMjkwMTkyNywianRpIjoiNmQzNDMwOTktZDIyYi00NjBhLTk4Y2UtNGQ4YjYwYjNlNTdlIiwic2NvcGUiOiJST0xFX1VTRVIifQ.VttevcfuZPmsTKE4eInb1K-4uIO9OsuWfNvudnCOrgM5fivpm0I4-5X0GmoIBpX5EkXbs0bYBxPy4nRWpiWruQ
+### "username": "Uname", // by ProfileService
+GET http://localhost:8888/api/v1/post/my-posts?page=1&size=10
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXZ0ZXJpYS5jb20iLCJzdWIiOiIzYWUwYjkxYS05MGQ1LTQ2YjUtYmU1MC1mMzYzNTc2M2JiMGQiLCJleHAiOjE3MzI5MDU1MjcsImlhdCI6MTczMjkwMTkyNywianRpIjoiNmQzNDMwOTktZDIyYi00NjBhLTk4Y2UtNGQ4YjYwYjNlNTdlIiwic2NvcGUiOiJST0xFX1VTRVIifQ.VttevcfuZPmsTKE4eInb1K-4uIO9OsuWfNvudnCOrgM5fivpm0I4-5X0GmoIBpX5EkXbs0bYBxPy4nRWpiWruQ
+###
+POST http://localhost:8888/api/v1/post/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkZXZ0ZXJpYS5jb20iLCJzdWIiOiIzYWUwYjkxYS05MGQ1LTQ2YjUtYmU1MC1mMzYzNTc2M2JiMGQiLCJleHAiOjE3MzI5MDU1MjcsImlhdCI6MTczMjkwMTkyNywianRpIjoiNmQzNDMwOTktZDIyYi00NjBhLTk4Y2UtNGQ4YjYwYjNlNTdlIiwic2NvcGUiOiJST0xFX1VTRVIifQ.VttevcfuZPmsTKE4eInb1K-4uIO9OsuWfNvudnCOrgM5fivpm0I4-5X0GmoIBpX5EkXbs0bYBxPy4nRWpiWruQ
+Content-Type: application/json
+
+{
+  "content": "hiii"
+}
