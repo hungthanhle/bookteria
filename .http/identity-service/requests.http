@@ -192,3 +192,16 @@ Content-Type: application/json
   "dob": "2000-10-01",
   "city": "Hanoi"
 }
+
+###
+POST http://localhost:8888/api/v1/notification/email/send
+Content-Type: application/json
+
+{
+  "to": {
+    "email": "hunglt.ee@yopmail.com",
+    "name": "Hiii"
+  },
+  "subject": "<3",
+  "htmlContent": "<h1>U</h1>"
+}
