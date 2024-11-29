@@ -205,3 +205,16 @@ Content-Type: application/json
   "subject": "<3",
   "htmlContent": "<h1>U</h1>"
 }
+
+###
+POST http://localhost:8888/api/v1/identity/users/registration
+Content-Type: application/json
+
+{
+  "username": "kafka test => log",
+  "password": "12345678",
+  "firstName": "Jame4",
+  "lastName": "Bond",
+  "dob": "2000-04-08",
+  "city": "Hanoi"
+}

@@ -51,4 +51,8 @@ hung@hung:~$ sudo systemctl status mongod
 https://stackoverflow.com/questions/38921414/mongodb-what-are-the-default-user-and-password
 
 https://yopmail.com/ test by hunglt.ee@yopmail.com
+
+
+missed message (update topics) và khởi động lại - https://youtu.be/rnvdPp6CzXs?si=yoLy9MieYih5sakx&t=1575
+chọn group mới
 ```
